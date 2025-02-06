@@ -1,0 +1,50 @@
+/* Global reset (optional) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Navigation bar styles */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Nav background color */
+    overflow: hidden;       /* Ensures the nav items stay in one row */
+  }
+  
+  nav li {
+    float: left;            /* Horizontal layout */
+  }
+  
+  nav li a {
+    display: block;
+    color: white;           /* Text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;  /* Remove underline */
+  }
+  
+  /* Hover effect (only for non-active links) */
+  nav li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  /* Active link (indicates the current page) */
+  nav li a.active {
+    background-color: #04AA6D; /* Green highlight */
+  }
+  
+  /* Optional: give main content a margin so it's not hidden behind the navbar */
+  main {
+    margin: 20px;
+  }
+  
